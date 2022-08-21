@@ -1,7 +1,10 @@
-import "./index.css";
+import { useState } from "react";
+import FeedbackData from "./data/FeedbackData";
 
 function App() {
-  return <div className="App">Hola</div>;
+  const [feedback, setFeedback] = useState(FeedbackData);
+
+  return <div className="container">Hola</div>;
 }
 
 export default App;
